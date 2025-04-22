@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <form action="" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="name" name="nome" required>
+        <br><br>
+        <label for="apelido">Apelido:</label>
+        <input type="text" id="apelido" name="apelido" required>
+        <br><br>
+        <label for="telemovel">Nº telemovel: </label>
+        <!-- regex para telemoveis +351^^^^ -->
+        <input type="tel" name="telephone" id="telemovel" pattern="(+?\d[\d\s-]{7,}\d)" required>
+        <br><br>
+        <label for="correio">Email:</label>
+        <input type="email" name="email" id="correio" autocomplete placeholder="Insira aqui o email" required>
+        <br><br>
+        <label for="sitio-na-web">website/linkedin:</label>
+         <input type="url" name="website" id="sitio-na-web" placeholder="linkedin/website">
+        <br><br>
+        <label for="ficheiro">Curriculum Vitae:</label>
+        <input type="file" name="file" id="ficheiro">
+        <br><br>
+        <label for="lastwork">Nome da última empresa onde trabalhou:</label>
+        <input type="text" id="lastwork" name="lastwork" required>
+        <br><br>
+        <label for="data">Data de início do cargo nessa empresa:</label>
+        <input type="date" name="date" id="data" value="2024-10-10" required>
+        <br><br>
+        <label for="data2">Data de término do cargo nessa empresa:</label>
+        <input type="date" name="date" id="data2" >
+        <br><br>
+        <label for="numeros">quantos meses precisam de dar à casa:</label>
+        <input type="number" name="numbers" id="numeros" required>
+        <br><br>
+        <label for="mensagem">espaço para escrever a Cover Letter:</label>
+        <textarea name="message" id="mensagem"></textarea>
+        <br><br>
+        <label for="knewid">onde ouviste falar de nós:</label>
+        <select name="knew" id="knewid" required>
+            <option value="">--Select a option--</option>
+            <option value="google">Goole</option>
+            <option value="amigos">Amigos</option>
+            <option value="linkedin">Linkedin</option>
+       </select>    
+
+    </form>
+</body>
+</html>

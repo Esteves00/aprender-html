@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+</head>
+<body>
+    <h1>Contactos</h1>
+
+    <form method="post">
+        <!-- Input de texto -->
+        <label for="texto">Input de texto:</label>
+        <input type="text" id="texto" name="pc-text" placeholder="Insira aqui o texto" value="Nuno" required maxlength="10" minlength="3">
+
+        <br><br>
+        <!-- input de email -->
+         <label for="correio">Input de email:</label>
+         <input type="email" name="email" id="correio" autocomplete placeholder="Insira aqui o email">
+
+        <br><br>
+        <!-- input password -->
+        <label for="palavrachave">input de password:</label>
+        <input type="password" name="password" id="palavrachave">
+
+        <br><br>
+        <label for="telemovel">Input de telemovel: </label>
+        <!-- regex para telemoveis +351^^^^ -->
+        <input type="tel" name="telephone" id="telemovel" pattern="(+?\d[\d\s-]{7,}\d)">
+
+        <br><br>
+        <!-- input url -->
+         <label for="sitio-na-web">Input de url:</label>
+         <input type="url" name="website" id="sitio-na-web">
+
+         <br><br>
+
+         <!-- input number -->
+          <label for="numeros">Input de numeros:</label>
+          <input type="number" name="numbers" id="numeros" min="10" max="100" step="10">
+
+          <br><br>
+
+          <!-- input range -->
+           <label for="intervalo">Input de range:</label>
+           <input type="range" name="range" id="intervalo" min="0" max="10" value="5">
+
+           <br><br>
+           <!-- input date -->
+            <label for="data">Input de data:</label>
+            <input type="date" name="date" id="data" value="2024-10-10">
+
+            <input type="time" name="time" id="tempo">
+            <input type="week" name="week" id="semana">
+            <input type="month" name="month" id="mes">
+            
+            <br><br>
+
+            <!-- input file -->
+             <label for="ficheiro">Input de ficheiro:</label>
+             <input type="file" name="file" id="ficheiro" multiple>
+
+             <br><br>
+
+             <!-- checkboxes -->
+              <label for="caixadecheck">Newsletter:</label>
+              <input type="checkbox" name="Newsletter" id="caixadecheck" checked>
+              <label for="caixadecheck2">Outra checkbox</label>
+              <input type="checkbox" name="Net" id="caixadecheck2">
+
+              <!-- radio -->
+               <h3>Sexo:</h3>
+              <label for="sexo-masculino">Masculino:</label>
+              <input type="radio" name="gender" id="sexo-masculino" value="masculino" checked>
+
+              <label for="sexo-feminino">Feminino</label>
+              <input type="radio" name="gender" id="sexo-feminino" value="feminino">
+
+              <br><br>
+              <!-- select -->
+               <label for="country">Country:</label>
+               <select name="country" id="pais" required multiple>
+                    <option value="">--Select a country--</option>
+                    <option value="portugal" selected>Portugal</option>
+                    <option value="espanha">Espanha</option>
+                    <option value="franca">França</option>
+               </select>
+
+               <br><br>
+
+               <!-- textarea -->
+                <label for="mensagem">Mensagem de texto:</label>
+                <textarea name="message" id="mensagem"></textarea>
+
+                <!-- hidden -->
+                 <input type="hidden" name="user_id" value="123cwa-1238wd">
+
+                 <br><br>
+
+                 <input type="submit" value="Enviar">
+                 <input type="reset" value="Reset ao form">
+
+                 <button type="submit">Enviar</button>
+
+
+
+    </form>
+    
+</body>
+</html>
