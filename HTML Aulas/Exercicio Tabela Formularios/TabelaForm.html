@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="PT-pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Aqui vai uma descrição desta página de tabelas">
+
+        <title>Tabelas</title>
+
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 8px 12px;
+                text-align: left;
+                border: 1px solid #ddd;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+            tfoot td{
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Tabelas</h1>
+        <form method="post">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Label</th>
+                        <th>Input</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><label for="text">Text</label></td>
+                        <td><input type="text" id="text" name="nome" value="Olaaa"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" id="password" name="password" placeholder="Enter your password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" name="email" id="email" placeholder="Enter your email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone:</label></td>
+                        <td><input type="tel" name="telephone" id="phone" placeholder="xxx-xxx-xxxx" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="numeros">Number(1-10):</label></td>
+                        <td><input type="number" name="numbers" id="numeros" min="1" max="10" step="1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="intervalo">Range:</label></td>
+                        <td><input type="range" name="range" id="intervalo" min="0" max="10" value="5"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="data">Date:</label></td>
+                        <td><input type="date" name="date" id="data" value="2024-10-10"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tempo">Time:</label></td>
+                        <td><input type="time" name="time" id="tempo"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="semana">Week:</label></td>
+                        <td><input type="week" name="week" id="semana"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="month">Month:</label></td>
+                        <td><input type="month" name="month" id="month"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="year">Year</label></td>
+                        <td><input type="text" id="year" name="year" placeholder="e.g: 2025"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="favcolor">Color:</label></td>
+                        <td><input type="color" id="favcolor" name="favcolor" value="#ff0000"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="file">Upload file(s):</label></td>
+                        <td><input type="file" name="file" id="file" multiple></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subscribe">Subscribe:</label></td>
+                        <td><input type="checkbox" name="Newsletter" id="subscribe" checked>Subscribe to newsletter</td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="male">
+                             <label for="male">Male</label><br>
+                             <input type="radio" id="female" name="gender" value="female">
+                             <label for="female">Female</label><br>
+                             <input type="radio" id="other" name="gender" value="other">
+                             <label for="other">Other</label>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Country:</label></td>
+                        <td>
+                            <select name="country" id="country" required>
+                                <option value="">--Select a country--</option>
+                                <option value="portugal">Portugal</option>
+                                <option value="espanha">Espanha</option>
+                                <option value="franca">França</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="favFruits">Favorite fruits:</label></td>
+                        <td>
+                            <select name="favFruits" id="favFruits" required multiple>
+                                <option value="apple">Apple</option>
+                                <option value="banana">Banana</option>
+                                <option value="orange">Orange</option>
+                                <option value="mango">Mango</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Message:</label></td>
+                        <td><textarea name="message" id="message"></textarea></td>
+                    </tr>
+
+                    
+                    
+        
+                    
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </body>
+</html>
