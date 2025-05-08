@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+
+body{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.card{
+    background: #BE570D;
+    background: linear-gradient(294deg,rgba(190, 87, 13, 1) 0%, rgba(240, 27, 4, 1) 50%);
+    width: 400px;
+    height: 600px;
+    position: relative;
+    border-radius: 15px;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+}
+
+.card-image img{
+    height: 400px;
+    position: absolute;
+    top: 210px;
+    left: 70px;
+    z-index: 2;
+}
+
+.card-title{
+    margin-top: 15px;
+    padding: 0px 20px;
+    color: white;
+
+}
+.card-text{
+    padding: 20px;
+    color: white;
+}
+.backdrop{
+    position: absolute; /* Permite posicionar o texto */
+    top: 50%; /* Centraliza verticalmente (ajuste conforme necessário) */
+    left: 50%; /* Centraliza horizontalmente (ajuste conforme necessário) */
+    transform: translate(-50%, -50%); /* Ajusta o ponto central para o centro do elemento */
+    font-size: 14em; /* Tamanho grande para o efeito */
+    color: rgb(255 255 255 / 30%);
+    z-index: 1; /* Garante que o texto esteja atrás da imagem (valor menor que o da imagem) */
+    pointer-events: none; /* Permite interagir com elementos abaixo do texto */
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.card-footer{
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 100px;
+}
+
+button {
+    display: inline-block; /* Permite que o botão se ajuste ao conteúdo e fique na mesma linha de outros elementos (se houver) */
+    padding: 10px 40px; /* Espaçamento interno: 10px em cima e embaixo, 20px nas laterais */
+    border: 2px solid #0000FF; /* Borda: 2px de largura, estilo sólido, cor azul (#0000FF) */
+    border-radius: 20px; /* Arredondamento das bordas: 5px (ajuste conforme necessário) */
+    color: #0000FF; /* Cor do texto: azul (#0000FF) */
+    font-size: 1em; /* Tamanho da fonte (você pode ajustar) */
+    text-decoration: none; /* Remove sublinhado padrão de links */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    background-color: transparent; /* Fundo transparente */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona uma transição suave para hover */
+    z-index: 3;
+  }
+  
+  button:hover {
+    background-color: #0000FF; /* Cor de fundo ao passar o mouse: azul */
+    color: #FFFFFF; /* Cor do texto ao passar o mouse: branco */
+  }
+  
+  /* Se o botão for um <button> em vez de um <a>, você pode precisar de alguns resets */
+  button.button {
+    border: none; /* Remove a borda padrão do botão */
+    background-color: transparent; /* Garante que o background seja transparente inicialmente */
+  }
+
+  .men-running-shoes{
+    color: gray; /* Exemplo de cor cinza claro */
+  font-size: 0.8em; /* Exemplo de tamanho menor */
+  text-transform: uppercase; /* Garante que o texto seja em maiúsculo */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  font-family: 'Montserrat', sans-serif; /* Provável fonte */
+  font-weight: 400; /* Provável peso da fonte (regular) */
+  letter-spacing: 7px; /* Exemplo de espaçamento entre letras */
+  }
+
