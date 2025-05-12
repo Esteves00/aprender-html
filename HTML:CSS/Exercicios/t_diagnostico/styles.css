@@ -1,0 +1,78 @@
+ font-family: Arial, Helvetica, sans-serif;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}/* General Styles */
+
+body {
+    font-family: Arial, sans-serif; /* A safe default; adjust to match image */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 40%; /* Adjust for desired width */
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Header Styles */
+.header {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px;
+}
+
+.date {
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.7em; /* Adjust size */
+    margin-bottom: 10px;
+    line-height: 1.2; /* Adjust line height for the title */
+}
+
+/* Image Styles */
+.image-container {
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%; /* Make image fill container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+}
+
+.video-container{
+    margin-bottom: 20px;
+}
+
+.video-container video{
+    width: 100%; /* Make image fill container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+}
+
+/* Text Content Styles */
+.text-content {
+    font-size: 0.95em; /* Adjust text size */
+    color: #444;
+}
+
+.text-content h3 {
+    font-size: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.text-content p {
+    margin-bottom: 15px;
+}
